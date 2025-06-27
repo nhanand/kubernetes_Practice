@@ -15,8 +15,11 @@ $ helm repo update
  helm install prometheus-stack prometheus-community/kube-prometheus-stack --namespace monitoring --set prometheus.service.nodePort=30000 --set grafana.service.nodePort=31000 --set prometheus.service.type=NodePort --set grafana.service.type=NodePort
 
 to check 
+
 $ kubectl get po -n monitoring 
-$ kubectl get po -n monitoring 
+
+$ kubectl get po -n monitoring
+
 $ kubectl port-forward svc/prometheus-stack-kube-prom-prometheus -n monitoring 9090:9090
 
  
