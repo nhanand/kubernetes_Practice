@@ -28,8 +28,18 @@ $ kubectl port-forward svc/prometheus-stack-kube-prom-prometheus -n monitoring 9
    go to browser and paste the link 
 
    127.0.0.1:9090                 # you will se prometheus is running
+   
+$ kubectl port-forward svc/prometheus-stack-grafana -n monitoring 3000:80 &
 
+   go to browser and paste the link 
+
+   127.0.0.1:3000              # you will see grafana is running
+
+   for password      // user admin
+
+   kubectl get secret prometheus-stack-grafana -n monitoring -o jsonpath="{.data.admin-password}" | base64 --decode
  
+
 
  
 
