@@ -40,6 +40,8 @@ $ kubectl port-forward svc/prometheus-stack-grafana -n monitoring 3000:80 &
    kubectl get secret prometheus-stack-grafana -n monitoring -o jsonpath="{.data.admin-password}" | base64 --decode
 
    - go in datasource u will see prometheous is already setup. click on build a dashboard and add visulaizitation and under metrics searcha and add.
+
+     deploy a voting app and check it data using grafana under kubernetes network workloads
  
 
 
