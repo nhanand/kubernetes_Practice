@@ -17,6 +17,8 @@ $ helm repo update
 to check 
 $ kubectl get po -n monitoring 
 
+kubectl port-forward svc/prometheus-stack-kube-prom-prometheus -n monitoring 9090:9090
+
  
 
  
