@@ -23,7 +23,7 @@ $ kubectl get po -n monitoring
 
 $ kubectl get po -n monitoring
 
-$ kubectl port-forward svc/prometheus-stack-kube-prom-prometheus -n monitoring 9090:9090
+$ kubectl port-forward svc/prometheus-stack-kube-prom-prometheus -n monitoring 9090:9090       # add address if on aws instance
 
    go to browser and paste the link 
 
