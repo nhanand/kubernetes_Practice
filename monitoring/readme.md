@@ -31,13 +31,15 @@ $ kubectl port-forward svc/prometheus-stack-kube-prom-prometheus -n monitoring 9
    
 $ kubectl port-forward svc/prometheus-stack-grafana -n monitoring 3000:80 &
 
-   go to browser and paste the link 
+  - go to browser and paste the link 
 
    127.0.0.1:3000              # you will see grafana is running
 
-   for password      // user admin
+  - for password      // user admin
 
    kubectl get secret prometheus-stack-grafana -n monitoring -o jsonpath="{.data.admin-password}" | base64 --decode
+
+   - go in datasource u will see prometheous is already setup. click on build a dashboard and add visulaizitation and under metrics searcha and add.
  
 
 
