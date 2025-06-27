@@ -1,6 +1,8 @@
 # prometheus community helm charts
 $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+
 $ chmod 700 get_helm.sh
+
 $ ./get_helm.sh
 
 # search and download prometheus helm charts
@@ -8,6 +10,7 @@ $ ./get_helm.sh
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
 $ helm repo list
+
 $ helm repo update
 
 # command to install prometheous and grafana in one go
@@ -21,6 +24,10 @@ $ kubectl get po -n monitoring
 $ kubectl get po -n monitoring
 
 $ kubectl port-forward svc/prometheus-stack-kube-prom-prometheus -n monitoring 9090:9090
+
+   go to browser and paste the link 
+
+   127.0.0.1:9090                 # you will se prometheus is running
 
  
 
