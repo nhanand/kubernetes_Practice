@@ -7,8 +7,8 @@ $ ./get_helm.sh
 
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
-helm repo list
-helm repo update
+$ helm repo list
+$ helm repo update
 
 # command to install prometheous and grafana in one go
 
